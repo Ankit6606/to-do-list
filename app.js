@@ -33,8 +33,7 @@ app.post("/",function(req,res){
 })
 
 app.get("/work",function(req,res){
-    let workDay = date.getDay();
-    res.render('index',{dayKey:"Work List; "+workDay,newItem:workItems})
+    res.render('index',{dayKey:"Work List",newItem:workItems})
 })
 
 app.get("/about",function(req,res){
