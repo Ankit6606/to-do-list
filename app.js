@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
-let items = ["Eat food","Clean hall","Code the remaining project"];
+let items = ["Eat food","Clean hall","Make your bed"];
 let workItems = [];
 
 app.get("/",function(req,res){
