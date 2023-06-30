@@ -1,0 +1,25 @@
+<!-- Ejs layout is used in header and footer section to reduce the working of copy and paste in big projects -->
+    <%- include('header'); -%>
+    <div class="box" id="heading">
+        <h1> <%= dayKey %> </h1>
+    </div>
+    
+    <div class="box">   
+       
+        <% for(var k =0;k<newItem.length;k++){ %>
+            <div class="item">
+                <input type="checkbox" >
+                <p> <%= newItem[k] %> </p>
+            </div>
+            <% } %>
+
+            
+        <form action="/" method="post">
+            <input type="text" name="newitem" placeholder="New Item" autocomplete="off">
+            <button type="submit" name="button" value="<%= dayKey %>">+</button>
+        </form>
+    </div>
+    <%- include('footer'); -%> 
+    
+    
+
